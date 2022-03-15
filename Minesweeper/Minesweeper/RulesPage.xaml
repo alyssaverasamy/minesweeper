@@ -2,11 +2,18 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Minesweeper.RulesPage">
-    <StackLayout>
+    x:Class="Minesweeper.RulesPage"
+    NavigationPage.HasNavigationBar="False"
+    Style="{StaticResource pageStyle}">
+    <StackLayout Style="{StaticResource centeredStackLayout}">
         <Label Text="rules"
-               HorizontalOptions="Center"
-               FontSize="Title"></Label>
+               Style="{StaticResource title}"></Label>
+        <Label Text="[rules go here]"
+               HorizontalOptions="Center"></Label>
+        <Button x:Name="mainmenuButton"
+                Text="main menu"
+                Clicked="MenuButton_OnClicked"
+                Style="{StaticResource buttonStyle}"></Button>
 
     </StackLayout>
 </ContentPage>

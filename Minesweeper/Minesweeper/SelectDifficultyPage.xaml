@@ -1,13 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
+    NavigationPage.HasNavigationBar="False"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Minesweeper.SelectDifficultyPage">
-    <StackLayout>
+    x:Class="Minesweeper.SelectDifficultyPage"
+    Style="{StaticResource pageStyle}">
+    <StackLayout Style="{StaticResource centeredStackLayout}">
         <Label Text="select difficulty"
-               HorizontalOptions="Center"
-               FontSize="Title"></Label>
-
+               Style="{StaticResource title}"></Label>
+        <Button Text="beginner"
+                Style="{StaticResource buttonStyle}"
+                WidthRequest="200"></Button>
+        <Button Text="intermediate"
+                Style="{StaticResource buttonStyle}"
+                WidthRequest="200"></Button>
+        <Button Text="expert"
+                Style="{StaticResource buttonStyle}"
+                WidthRequest="200"></Button>
     </StackLayout>
 </ContentPage>
 

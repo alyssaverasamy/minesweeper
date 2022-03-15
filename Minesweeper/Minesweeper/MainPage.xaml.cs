@@ -25,7 +25,6 @@ namespace Minesweeper
             await Navigation.PushAsync(new RulesPage());
         }
 
-
     }
 }
 

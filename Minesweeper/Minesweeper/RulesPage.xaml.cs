@@ -11,6 +11,13 @@ namespace Minesweeper
         {
             InitializeComponent ();
         }
+
+
+        private async void MenuButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+
     }
 }
 
