@@ -10,13 +10,13 @@
                Style="{StaticResource title}"></Label>
         <Button Text="beginner"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="200"></Button>
+                WidthRequest="150"></Button>
         <Button Text="intermediate"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="200"></Button>
+                WidthRequest="150"></Button>
         <Button Text="expert"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="200"></Button>
+                WidthRequest="150"></Button>
     </StackLayout>
 </ContentPage>
 

@@ -14,4 +14,16 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="BalooThambi2-Regular.ttf" />
+    <None Remove="Fredoka-Regular.ttf" />
+    <None Remove="BusinessLogic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BalooThambi2-Regular.ttf" />
+    <EmbeddedResource Include="Fredoka-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessLogic\" />
+  </ItemGroup>
 </Project>

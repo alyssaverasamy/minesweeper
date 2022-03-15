@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8PoNj7k7QG3FsEbHHc0cMQrUWY4jjfnnOzN7TqQ+ph3JTZ+b/s2IvkBszoCKmxkSXMR3V96BBpkwHGA8RR+zMg==",
+  "success": true,
+  "projectFilePath": "/Users/alyssa/Documents/uni/winter2022/prog10065/term project/Minesweeper/Minesweeper/Minesweeper.iOS/Minesweeper.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/alyssa/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/alyssa/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
+    "/Users/alyssa/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

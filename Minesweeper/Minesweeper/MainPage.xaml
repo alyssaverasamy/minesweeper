@@ -7,7 +7,10 @@
 
     <StackLayout Style="{StaticResource centeredStackLayout}">
         <Label Text="minesweeper"
-               Style="{StaticResource title}"></Label>
+               Style="{StaticResource title}"
+               FontFamily="BalooThambi"
+               FontSize="50"
+               TextColor="#9FA8DA"></Label>
         <Button x:Name="startButton"
                 Text="start game"
                 Style="{StaticResource buttonStyle}"

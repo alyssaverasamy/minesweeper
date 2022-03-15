@@ -21,9 +21,11 @@
                 <Setter Property="CornerRadius"
                         Value="50"></Setter>
                 <Setter Property="TextColor"
-                        Value="#9FA8DA"></Setter>
+                        Value="#7986CB"></Setter>
                 <Setter Property="TextTransform"
                         Value="Uppercase"></Setter>
+                <Setter Property="FontFamily"
+                        Value="Fredoka"></Setter>
             </Style>
 
             <Style x:Key="pageStyle"
@@ -51,6 +53,8 @@
                         Value="Title"></Setter>
                 <Setter Property="Margin"
                         Value="20"></Setter>
+                <Setter Property="FontFamily"
+                        Value="Fredoka"></Setter>
 
             </Style>
 
