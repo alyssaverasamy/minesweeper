@@ -14,6 +14,18 @@ namespace Minesweeper
         {
             InitializeComponent();
         }
+
+        private async void StartButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SelectDifficultyPage());
+        }
+
+        private async void RulesButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RulesPage());
+        }
+
+
     }
 }
 
