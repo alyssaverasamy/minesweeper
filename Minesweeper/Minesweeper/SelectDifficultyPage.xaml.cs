@@ -11,6 +11,12 @@ namespace Minesweeper
         {
             InitializeComponent ();
         }
+
+        // placeholder, need to update to change difficulty based on selection
+        private async void DifficultyButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PlayGame());
+        }
     }
 }
 

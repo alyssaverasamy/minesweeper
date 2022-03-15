@@ -8,15 +8,24 @@
     <StackLayout Style="{StaticResource centeredStackLayout}">
         <Label Text="select difficulty"
                Style="{StaticResource title}"></Label>
-        <Button Text="beginner"
+
+        <!--NEED TO CHANGE EVENT FOR BUTTON CLICKS
+            currently just for testing/making UI for playgame page-->
+        <Button x:Name="beginnerButton"
+                Text="beginner"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"></Button>
-        <Button Text="intermediate"
+                WidthRequest="150"
+                Clicked="DifficultyButton_OnClicked"></Button>
+        <Button x:Name="intermediateButton"
+                Text="intermediate"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"></Button>
-        <Button Text="expert"
+                WidthRequest="150"
+                Clicked="DifficultyButton_OnClicked"></Button>
+        <Button x:Name="expertButton"
+                Text="expert"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"></Button>
+                WidthRequest="150"
+                Clicked="DifficultyButton_OnClicked"></Button>
     </StackLayout>
 </ContentPage>
 

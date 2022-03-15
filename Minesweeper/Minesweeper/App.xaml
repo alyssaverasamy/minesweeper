@@ -55,6 +55,8 @@
                         Value="20"></Setter>
                 <Setter Property="FontFamily"
                         Value="Fredoka"></Setter>
+                <Setter Property="TextTransform"
+                        Value="Lowercase"></Setter>
 
             </Style>
 

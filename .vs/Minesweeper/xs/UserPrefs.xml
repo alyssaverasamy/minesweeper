@@ -1,27 +1,19 @@
 ﻿<Properties StartupConfiguration="{BCBA295F-5EE1-4597-B0B0-AE3671AE6F95}|Default">
-  <MonoDevelop.Ide.ItemProperties.Minesweeper.Android PreferredExecutionTarget="Android.emulator-5554" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.2.99.75.75" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Minesweeper.iOS FirstBuild="True" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.emulator-5554" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Minesweeper/Minesweeper/App.xaml">
-    <Files>
-      <File FileName="Minesweeper/Minesweeper/MainPage.xaml.cs" Line="24" Column="10" />
-      <File FileName="Minesweeper/Minesweeper/SelectDifficultyPage.xaml" Line="14" Column="1" />
-      <File FileName="Minesweeper/Minesweeper/SelectDifficultyPage.xaml.cs" Line="12" Column="36" />
-      <File FileName="Minesweeper/Minesweeper/MainPage.xaml" Line="13" Column="27" />
-      <File FileName="Minesweeper/Minesweeper/App.xaml.cs" Line="16" Column="43" />
-      <File FileName="Minesweeper/Minesweeper/App.xaml" Line="13" Column="39" />
-      <File FileName="Minesweeper/Minesweeper/RulesPage.xaml" Line="10" Column="28" />
-      <File FileName="Minesweeper/Minesweeper/RulesPage.xaml.cs" Line="21" Column="6" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Minesweeper" expanded="True">
             <Node name="Minesweeper" expanded="True">
-              <Node name="App.xaml" expanded="True" selected="True" />
+              <Node name="BusinessLogic" selected="True" />
+              <Node name="App.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
               <Node name="RulesPage.xaml" expanded="True" />
               <Node name="SelectDifficultyPage.xaml" expanded="True" />
@@ -34,8 +26,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_2_API_30" />
+  <MonoDevelop.Ide.ItemProperties.Minesweeper.Android PreferredExecutionTarget="Android.Pixel_2_API_30" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.2.99.75.75" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
