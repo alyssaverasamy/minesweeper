@@ -10,21 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace Minesweeper
 {
 
-    public partial class BegginerDifficulty : ContentPage
+    public partial class BeginnerDifficulty : ContentPage
     {
-        public BegginerDifficulty()
+        public BeginnerDifficulty()
         {
             InitializeComponent();
 
             for(int rowI = 0; rowI < 8; rowI++)
             {
-                mineGridBegginer.RowDefinitions.Add(new RowDefinition());
-                mineGridBegginer.ColumnDefinitions.Add(new ColumnDefinition());
+                mineGridBeginner.RowDefinitions.Add(new RowDefinition());
+                mineGridBeginner.ColumnDefinitions.Add(new ColumnDefinition());
                 for (int colI = 0; colI < 8; colI ++)
                 {
                     Button mineBox = new Button();
                     mineBox.BackgroundColor = Color.LightGray;
-                    mineGridBegginer.Children.Add(mineBox, rowI, colI); 
+                    mineGridBeginner.Children.Add(mineBox, rowI, colI); 
                 }
             }
         }

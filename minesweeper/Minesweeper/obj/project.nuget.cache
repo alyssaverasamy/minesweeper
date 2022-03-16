@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "9+4ZCv8tg3Shqgm8IfITClBy1/oNufw6uTgElpnEUUuDHoJZa2sp2ALHbdByein8OPLRp/uJ9f6RXw7U7u1fHA==",
+  "dgSpecHash": "0nW0k+SGvITZ78ImguZWZMM42b1Wp681n4IaU3JVuc/jnzvE3Dp6w2mQAcSPMf6cqY1TAfs2xQz5Kis4NYLgjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj",
+  "projectFilePath": "/Users/alyssa/Documents/uni/winter2022/prog10065/minesweeper2/Minesweeper/Minesweeper/Minesweeper.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tejas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\tejas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\tejas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\tejas\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\tejas\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "/Users/alyssa/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/alyssa/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/alyssa/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/alyssa/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
+    "/Users/alyssa/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }

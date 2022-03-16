@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Minesweeper.BegginerDifficulty">
+             x:Class="Minesweeper.BeginnerDifficulty">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
@@ -17,7 +17,7 @@
                 TextColor="#9FA8DA"></Label>
                 <Button x:Name="BtnSetFlag"></Button>
             </StackLayout>
-            <Grid x:Name="mineGridBegginer" ColumnSpacing="1" RowSpacing="1">
+            <Grid x:Name="mineGridBeginner" ColumnSpacing="1" RowSpacing="1">
                 
             </Grid>
         </StackLayout>
