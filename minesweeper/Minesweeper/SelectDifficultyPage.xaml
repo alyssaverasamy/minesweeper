@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    NavigationPage.HasNavigationBar="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Minesweeper.SelectDifficultyPage"
+    Style="{StaticResource pageStyle}">
+    <StackLayout Style="{StaticResource centeredStackLayout}">
+        <Label Text="select difficulty"
+               Style="{StaticResource title}"></Label>
+
+        <!--NEED TO CHANGE EVENT FOR BUTTON CLICKS
+            currently just for testing/making UI for playgame page-->
+        <Button x:Name="beginnerButton"
+                Text="beginner"
+                Style="{StaticResource buttonStyle}"
+                WidthRequest="150"
+                Clicked="DifficultyButton_OnClicked"></Button>
+        <Button x:Name="intermediateButton"
+                Text="intermediate"
+                Style="{StaticResource buttonStyle}"
+                WidthRequest="150"
+                Clicked="DifficultyButton_OnClicked"></Button>
+        <Button x:Name="expertButton"
+                Text="expert"
+                Style="{StaticResource buttonStyle}"
+                WidthRequest="150"
+                Clicked="DifficultyButton_OnClicked"></Button>
+    </StackLayout>
+</ContentPage>
+

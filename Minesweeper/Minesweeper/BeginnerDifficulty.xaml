@@ -8,7 +8,7 @@
                 <Label Text="Mines Left"
                  Style="{StaticResource title}"
                  FontFamily="BalooThambi"
-                 Fontsize="50"
+                 FontSize="50"
                  TextColor="#9FA8DA"></Label>
                 <Label Text=""
                 Style="{StaticResource title}"
