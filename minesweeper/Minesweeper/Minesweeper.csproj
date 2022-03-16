@@ -31,9 +31,4 @@
       <DependentUpon>BeginnerDifficulty.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="BeginnerDifficulty.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
 </Project>

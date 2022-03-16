@@ -4,12 +4,14 @@
              x:Class="Minesweeper.BeginnerDifficulty"
              NavigationPage.HasNavigationBar="False"
              Style="{StaticResource pageStyle}">
+
     <StackLayout Orientation="Vertical">
         <StackLayout Orientation="Horizontal">
 
             <Button x:Name="pauseButton"
                     Text="pause"
-                    Style="{StaticResource buttonStyle}"/>
+                    Style="{StaticResource buttonStyle}"
+                    Clicked="PauseButton_OnClicked"/>
 
             <Label x:Name="minesLeft"
                    Text=""

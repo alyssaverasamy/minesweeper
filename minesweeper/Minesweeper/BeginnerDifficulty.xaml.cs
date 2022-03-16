@@ -28,5 +28,10 @@ namespace Minesweeper
                 }
             }
         }
+
+        private async void PauseButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PauseMenu());
+        }
     }
 }
