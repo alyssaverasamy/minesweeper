@@ -5,27 +5,34 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Minesweeper.SelectDifficultyPage"
     Style="{StaticResource pageStyle}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="WidthRequest"
+                        Value="150"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <StackLayout Style="{StaticResource centeredStackLayout}">
         <Label Text="select difficulty"
-               Style="{StaticResource title}"></Label>
+               Style="{StaticResource title}"/>
 
         <!--NEED TO CHANGE EVENT FOR BUTTON CLICKS
             currently just for testing/making UI for playgame page-->
         <Button x:Name="beginnerButton"
                 Text="beginner"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"
-                Clicked="DifficultyButton_OnClicked"></Button>
+                Clicked="DifficultyButton_OnClicked"/>
         <Button x:Name="intermediateButton"
                 Text="intermediate"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"
-                Clicked="DifficultyButton_OnClicked"></Button>
+                Clicked="DifficultyButton_OnClicked"/>
         <Button x:Name="expertButton"
                 Text="expert"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"
-                Clicked="DifficultyButton_OnClicked"></Button>
+                Clicked="DifficultyButton_OnClicked"/>
     </StackLayout>
 </ContentPage>
 

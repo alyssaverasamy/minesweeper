@@ -9,55 +9,64 @@
                    TargetType="Button">
 
                 <Setter Property="BackgroundColor"
-                        Value="#fafafa"></Setter>
+                        Value="#fafafa"/>
                 <Setter Property="BorderColor"
-                        Value="#9FA8DA"></Setter>
+                        Value="#9FA8DA"/>
                 <Setter Property="BorderWidth"
-                        Value="2"></Setter>
+                        Value="2"/>
                 <Setter Property="HorizontalOptions"
-                        Value="Center"></Setter>
+                        Value="Center"/>
                 <Setter Property="Margin"
-                        Value="10"></Setter>
+                        Value="10"/>
                 <Setter Property="CornerRadius"
-                        Value="50"></Setter>
+                        Value="50"/>
                 <Setter Property="TextColor"
-                        Value="#7986CB"></Setter>
+                        Value="#7986CB"/>
                 <Setter Property="TextTransform"
-                        Value="Uppercase"></Setter>
+                        Value="Uppercase"/>
                 <Setter Property="FontFamily"
-                        Value="Fredoka"></Setter>
+                        Value="Fredoka"/>
             </Style>
 
             <Style x:Key="pageStyle"
                    TargetType="ContentPage">
 
                 <Setter Property="BackgroundColor"
-                        Value="#fafafa"></Setter>
+                        Value="#fafafa"/>
 
             </Style>
 
             <Style x:Key="centeredStackLayout"
                    TargetType="StackLayout">
                 <Setter Property="HorizontalOptions"
-                        Value="Center"></Setter>
+                        Value="Center"/>
                 <Setter Property="VerticalOptions"
-                        Value="Center"></Setter>
+                        Value="Center"/>
 
             </Style>
 
             <Style x:Key="title"
                    TargetType="Label">
                 <Setter Property="HorizontalOptions"
-                        Value="Center"></Setter>
+                        Value="Center"/>
                 <Setter Property="FontSize"
-                        Value="Title"></Setter>
+                        Value="Title"/>
                 <Setter Property="Margin"
-                        Value="20"></Setter>
+                        Value="20"/>
                 <Setter Property="FontFamily"
-                        Value="Fredoka"></Setter>
+                        Value="Fredoka"/>
                 <Setter Property="TextTransform"
-                        Value="Lowercase"></Setter>
+                        Value="Lowercase"/>
+            </Style>
 
+            <Style x:Key="counter"
+                   TargetType="Label">
+                <Setter Property="FontSize"
+                        Value="Caption"/>
+                <Setter Property="FontFamily"
+                        Value="Fredoka"/>
+                <Setter Property="TextTransform"
+                        Value="Lowercase"/>
             </Style>
 
         </ResourceDictionary>

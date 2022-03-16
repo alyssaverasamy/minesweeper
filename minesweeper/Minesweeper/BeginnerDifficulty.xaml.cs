@@ -16,7 +16,7 @@ namespace Minesweeper
         {
             InitializeComponent();
 
-            for(int rowI = 0; rowI < 8; rowI++)
+            for (int rowI = 0; rowI < 8; rowI++)
             {
                 mineGridBeginner.RowDefinitions.Add(new RowDefinition());
                 mineGridBeginner.ColumnDefinitions.Add(new ColumnDefinition());

@@ -5,20 +5,31 @@
     x:Class="Minesweeper.RulesPage"
     NavigationPage.HasNavigationBar="False"
     Style="{StaticResource pageStyle}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontFamily"
+                        Value="Fredoka"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <StackLayout Style="{StaticResource centeredStackLayout}"
                  Margin="30">
         <Label Text="rules"
-               Style="{StaticResource title}"></Label>
-        <Label Text="The game begins with a grid of covered cells."></Label>
-        <Label Text="A certain number of these cells will be mines, which, if uncovered, will end the game."></Label>
-        <Label Text="To start, tap any of the cells in the grid to uncover it."></Label>
-        <Label Text="The number shown in each cell tells you how many mines are in its adjacent cells."></Label>
-        <Label Text="You can flag covered cells that you suspect to be mines by long-pressing the cell."></Label>
-        <Button x:Name="mainmenuButton"
-                Text="main menu"
-                Clicked="MenuButton_OnClicked"
-                Style="{StaticResource buttonStyle}"></Button>
+               Style="{StaticResource title}"/>
 
+        <Label Text="The game begins with a grid of covered cells."/>
+        <Label Text="A certain number of these cells will be mines, which, if uncovered, will end the game."/>
+        <Label Text="To start, tap any of the cells in the grid to uncover it."/>
+        <Label Text="The number shown in each cell tells you how many mines are in its adjacent cells."/>
+        <Label Text="You can flag covered cells that you suspect to be mines by long-pressing the cell."/>
+
+        <Button x:Name="mainmenuButton"
+                Text="back"
+                Clicked="BackButton_OnClicked"
+                Style="{StaticResource buttonStyle}"/>
     </StackLayout>
 </ContentPage>
 

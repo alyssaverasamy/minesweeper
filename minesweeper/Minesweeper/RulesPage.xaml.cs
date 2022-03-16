@@ -13,9 +13,9 @@ namespace Minesweeper
         }
 
 
-        private async void MenuButton_OnClicked(object sender, EventArgs e)
+        private async void BackButton_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PopAsync();
         }
 
     }
