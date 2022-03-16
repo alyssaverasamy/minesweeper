@@ -13,9 +13,19 @@ namespace Minesweeper
         }
 
         // placeholder, need to update to change difficulty based on selection
-        private async void DifficultyButton_OnClicked(object sender, EventArgs e)
+        private async void BegginerButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new BeginnerDifficulty());
+        }
+
+        private async void IntermediateButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new IntermediateDifficulty());
+        }
+
+        private async void ExpertButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ExpertDifficulty());
         }
     }
 }

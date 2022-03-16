@@ -24,15 +24,15 @@
         <Button x:Name="beginnerButton"
                 Text="beginner"
                 Style="{StaticResource buttonStyle}"
-                Clicked="DifficultyButton_OnClicked"/>
+                Clicked="BegginerButton_OnClicked"/>
         <Button x:Name="intermediateButton"
                 Text="intermediate"
                 Style="{StaticResource buttonStyle}"
-                Clicked="DifficultyButton_OnClicked"/>
+                Clicked="IntermediateButton_OnClicked"/>
         <Button x:Name="expertButton"
                 Text="expert"
                 Style="{StaticResource buttonStyle}"
-                Clicked="DifficultyButton_OnClicked"/>
+                Clicked="ExpertButton_OnClicked"/>
     </StackLayout>
 </ContentPage>
 
