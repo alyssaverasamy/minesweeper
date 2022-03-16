@@ -14,11 +14,11 @@ namespace Minesweeper
         public ExpertDifficulty()
         {
             InitializeComponent();
-            for (int rowI = 0; rowI < 10; rowI++)
+            for (int rowI = 0; rowI < 12; rowI++)
             {
                 mineGridExpert.RowDefinitions.Add(new RowDefinition());
                 mineGridExpert.ColumnDefinitions.Add(new ColumnDefinition());
-                for (int colI = 0; colI < 10; colI++)
+                for (int colI = 0; colI < 12; colI++)
                 {
                     Button mineBox = new Button();
                     mineBox.BackgroundColor = Color.LightGray;
