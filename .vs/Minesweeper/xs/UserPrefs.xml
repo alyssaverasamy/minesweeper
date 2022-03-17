@@ -1,38 +1,30 @@
 ﻿<Properties StartupConfiguration="{BCBA295F-5EE1-4597-B0B0-AE3671AE6F95}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Minesweeper.iOS FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Minesweeper.Android PreferredExecutionTarget="Android.Pixel_2_API_30" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.2.99.75.75" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_2_API_30" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Minesweeper/Minesweeper/BeginnerDifficulty.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Minesweeper/Minesweeper/SelectDifficultyPage.xaml.cs">
     <Files>
-      <File FileName="Minesweeper/Minesweeper/SelectDifficultyPage.xaml.cs" Line="3" Column="1" />
-      <File FileName="Minesweeper/Minesweeper/BeginnerDifficulty.xaml.cs" Line="22" Column="36" />
-      <File FileName="Minesweeper/Minesweeper/RulesPage.xaml.cs" Line="16" Column="51" />
-      <File FileName="Minesweeper/Minesweeper/App.xaml" Line="12" Column="45" />
-      <File FileName="Minesweeper/Minesweeper/App.xaml.cs" Line="19" Column="1" />
-      <File FileName="Minesweeper/Minesweeper/RulesPage.xaml" Line="1" Column="1" />
-      <File FileName="Minesweeper/Minesweeper/MainPage.xaml" Line="9" Column="34" />
+      <File FileName="Minesweeper/Minesweeper/SelectDifficultyPage.xaml.cs" Line="11" Column="10" />
+      <File FileName="Minesweeper/Minesweeper/BeginnerDifficulty.xaml.cs" Line="7" Column="21" />
+      <File FileName="Minesweeper/Minesweeper/RulesPage.xaml.cs" Line="24" Column="1" />
+      <File FileName="Minesweeper/Minesweeper/App.xaml.cs" Line="16" Column="43" />
       <File FileName="Minesweeper/Minesweeper/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Minesweeper/Minesweeper/PauseMenu.xaml.cs" Line="18" Column="10" />
+      <File FileName="Minesweeper/Minesweeper/App.xaml" Line="1" Column="1" />
+      <File FileName="Minesweeper/Minesweeper/RulesPage.xaml" Line="1" Column="1" />
+      <File FileName="Minesweeper/Minesweeper/MainPage.xaml" Line="1" Column="1" />
       <File FileName="Minesweeper/Minesweeper/BeginnerDifficulty.xaml" Line="1" Column="1" />
+      <File FileName="Minesweeper/Minesweeper/SelectDifficultyPage.xaml" Line="9" Column="28" />
+      <File FileName="Minesweeper/Minesweeper/PauseMenu.xaml" Line="1" Column="1" />
+      <File FileName="Minesweeper/Minesweeper/IntermediateDifficulty.xaml" Line="9" Column="45" />
+      <File FileName="Minesweeper/Minesweeper/IntermediateDifficulty.xaml.cs" Line="6" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Minesweeper" expanded="True">
             <Node name="Minesweeper" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="BeginnerDifficulty.xaml" expanded="True">
-                <Node name="BeginnerDifficulty.xaml.cs" selected="True" />
+              <Node name="SelectDifficultyPage.xaml" expanded="True">
+                <Node name="SelectDifficultyPage.xaml.cs" selected="True" />
               </Node>
-              <Node name="MainPage.xaml" expanded="True" />
-              <Node name="RulesPage.xaml" expanded="True" />
-              <Node name="SelectDifficultyPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -42,4 +34,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Minesweeper.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Minesweeper.Android PreferredExecutionTarget="Android.emulator-5554" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="12.2.99.75.75" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.emulator-5554" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>

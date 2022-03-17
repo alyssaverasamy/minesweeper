@@ -6,15 +6,6 @@
     x:Class="Minesweeper.SelectDifficultyPage"
     Style="{StaticResource pageStyle}">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style TargetType="Button">
-                <Setter Property="WidthRequest"
-                        Value="150"/>
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <StackLayout Style="{StaticResource centeredStackLayout}">
         <Label Text="select difficulty"
                Style="{StaticResource title}"/>
@@ -24,14 +15,17 @@
         <Button x:Name="beginnerButton"
                 Text="beginner"
                 Style="{StaticResource buttonStyle}"
-                Clicked="BegginerButton_OnClicked"/>
+                WidthRequest="150"
+                Clicked="BeginnerButton_OnClicked"/>
         <Button x:Name="intermediateButton"
                 Text="intermediate"
                 Style="{StaticResource buttonStyle}"
+                WidthRequest="150"
                 Clicked="IntermediateButton_OnClicked"/>
         <Button x:Name="expertButton"
                 Text="expert"
                 Style="{StaticResource buttonStyle}"
+                WidthRequest="150"
                 Clicked="ExpertButton_OnClicked"/>
     </StackLayout>
 </ContentPage>

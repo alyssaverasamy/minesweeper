@@ -8,8 +8,8 @@
 
                 <Button x:Name="pauseButton"
                     Text="pause"
-                    Style="{StaticResource buttonStyle}"
-                    Clicked="PauseButton_OnClicked"/>
+                    Style="{StaticResource buttonStyle}"/>
+                <!--Clicked="PauseButton_OnClicked"-->
 
                 <Label x:Name="minesLeft"
                    Text=""

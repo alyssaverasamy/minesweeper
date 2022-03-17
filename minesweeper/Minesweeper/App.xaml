@@ -62,11 +62,9 @@
             <Style x:Key="counter"
                    TargetType="Label">
                 <Setter Property="FontSize"
-                        Value="Caption"/>
+                        Value="Title"/>
                 <Setter Property="FontFamily"
                         Value="Fredoka"/>
-                <Setter Property="TextTransform"
-                        Value="Lowercase"/>
             </Style>
 
         </ResourceDictionary>
