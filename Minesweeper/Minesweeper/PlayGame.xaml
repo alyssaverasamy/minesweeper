@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minesweeper.PlayGame"
+             NavigationPage.HasNavigationBar="False"
+             Style="{StaticResource pageStyle}">
+
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal">
+
+            <Button x:Name="pauseButton"
+                    Text="pause"
+                    Style="{StaticResource buttonStyle}"
+                    Clicked="PauseButton_OnClicked"/>
+
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="EndAndExpand"
+                         Margin="10">
+                <Label x:Name="minesLeft"
+                       Text=""
+                       Style="{StaticResource counter}"/>
+
+                <Label x:Name="timer"
+                       Text="xx:xx"
+                       Style="{StaticResource counter}"/>
+            </StackLayout>
+        </StackLayout>
+
+        <Grid x:Name="mineGrid" ColumnSpacing="1" RowSpacing="1">
+                
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Minesweeper.PauseMenu"
+    NavigationPage.HasNavigationBar="False"
+    Style="{StaticResource pageStyle}">
+
+    <StackLayout Style="{StaticResource centeredStackLayout}">
+        <Label Text="paused"
+               Style="{StaticResource title}"></Label>
+        <Button x:Name="resumeButton"
+                Text="resume"
+                Style="{StaticResource buttonStyle}"
+                Clicked="ResumeButton_OnClicked"></Button>
+        <Button x:Name="quitGame"
+                Text="quit"
+                Style="{StaticResource buttonStyle}"
+                Clicked="QuitButton_OnClicked"></Button>
+        <Button x:Name="rules"
+                Text="rules"
+                Style="{StaticResource buttonStyle}"
+                Clicked="RulesButton_OnClicked"></Button>
+        <Button x:Name="mainMenu"
+                Text="menu"
+                Style="{StaticResource buttonStyle}"></Button>
+
+    </StackLayout>
+</ContentPage>
+
