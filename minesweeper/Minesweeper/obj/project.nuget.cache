@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Aqm0lbGfn3rkot6wzxVK2nnScfTFDS+yMBsrCbxl87RoX/QaBwmbpYSPq6Fa3lQEyeq0OygZ9kZnP5qJpV7lOQ==",
+  "dgSpecHash": "MmKUx9dDZCo01ZSHAuRCCNP2ih+CPBdvFNFf813gsc4tJ+nOltMRmBeT5Nh9G8XNQ6BDyQ5+XwSCWPoQ1ZpYuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj",
+  "projectFilePath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tejas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tejas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

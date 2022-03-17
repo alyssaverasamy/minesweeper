@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj": {}
+    "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj": {
+    "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
         "projectName": "Minesweeper.Android",
-        "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
+        "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
         "packagesPath": "C:\\Users\\Tejas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\obj\\",
+        "outputPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid12.0": {
             "projectReferences": {
-              "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj": {
-                "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj"
+              "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj": {
+                "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj": {
+    "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj",
+        "projectUniqueName": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj",
         "projectName": "Minesweeper",
-        "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj",
+        "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj",
         "packagesPath": "C:\\Users\\Tejas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tejas\\Source\\Repos\\minesweeper\\Minesweeper\\Minesweeper\\obj\\",
+        "outputPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

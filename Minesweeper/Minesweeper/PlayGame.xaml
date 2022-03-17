@@ -27,7 +27,7 @@
         </StackLayout>
 
         <Grid x:Name="mineGrid" ColumnSpacing="1" RowSpacing="1">
-                
+
         </Grid>
 
     </StackLayout>
