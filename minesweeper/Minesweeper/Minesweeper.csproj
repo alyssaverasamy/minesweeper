@@ -26,20 +26,4 @@
   <ItemGroup>
     <Folder Include="BusinessLogic\" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Update="BeginnerDifficulty.xaml.cs">
-      <DependentUpon>BeginnerDifficulty.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="ExpertDifficulty.xaml.cs">
-      <DependentUpon>ExpertDifficulty.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="IntermediateDifficulty.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="ExpertDifficulty.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
 </Project>
