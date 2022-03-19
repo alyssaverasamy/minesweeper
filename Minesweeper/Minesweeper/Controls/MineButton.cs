@@ -13,6 +13,7 @@ namespace Minesweeper.Controls
         public int rowPosition { get; set; }
         public int columnPosition { get; set; }
 
+        public bool isMine; 
       
     }
 }

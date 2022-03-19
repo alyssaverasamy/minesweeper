@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Minesweeper",
+    "\\Minesweeper\\Minesweeper"
   ],
+  "SelectedNode": "\\Minesweeper.sln",
   "PreviewInSolutionExplorer": false
 }

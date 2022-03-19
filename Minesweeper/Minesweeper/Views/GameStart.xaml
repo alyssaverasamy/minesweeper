@@ -13,7 +13,7 @@
 
                 </Grid>
             </ScrollView>
-            <Label Text="Bottom"></Label>
+            <ListView x:Name="Sample"></ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
