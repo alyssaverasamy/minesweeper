@@ -63,7 +63,7 @@ namespace Minesweeper.Views
 
                 
             }
-            Sample.ItemsSource = MineLocations; 
+            Sample.ItemsSource = MineLocations; // not necessary, just used to show that the location of MineButtons can be indexed. 
 
         }
         
