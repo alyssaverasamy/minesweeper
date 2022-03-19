@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Minesweeper.Views;
 
 namespace Minesweeper
 {
@@ -10,7 +11,8 @@ namespace Minesweeper
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new GameStart(); 
         }
 
         protected override void OnStart ()

@@ -39,3 +39,4 @@ C:\Users\Tejas\Source\Repos\minesweeper\Minesweeper\Minesweeper\obj\Debug\netsta
 C:\Users\Tejas\Source\Repos\minesweeper\Minesweeper\Minesweeper\obj\Debug\netstandard2.0\Minesweeper.dll
 C:\Users\Tejas\Source\Repos\minesweeper\Minesweeper\Minesweeper\obj\Debug\netstandard2.0\ref\Minesweeper.dll
 C:\Users\Tejas\Source\Repos\minesweeper\Minesweeper\Minesweeper\obj\Debug\netstandard2.0\Minesweeper.pdb
+C:\Users\Tejas\Source\Repos\MineSweeper\Minesweeper\Minesweeper\obj\Debug\netstandard2.0\Views\GameStart.xaml.g.cs

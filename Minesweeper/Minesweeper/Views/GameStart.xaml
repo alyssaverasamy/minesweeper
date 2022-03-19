@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minesweeper.Views.GameStart">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Sample"></Label>
+                <Label Text="Sample"></Label>
+            </StackLayout>
+            <ScrollView>
+                <Grid x:Name="MineGrid" RowSpacing ="1" ColumnSpacing="1">
+
+                </Grid>
+            </ScrollView>
+            <Label Text="Bottom"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
