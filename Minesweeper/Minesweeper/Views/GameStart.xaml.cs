@@ -8,7 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Minesweeper.Logic; using Minesweeper.Controls; 
 
-namespace Minesweeper.Views
+namespace Minesweeper.Views //this is sample page template page, will not be included in the end product of the project. 
 {
     public partial class GameStart : ContentPage
     {
@@ -32,38 +32,28 @@ namespace Minesweeper.Views
 
             foreach(MineButton button in MineGrid.Children)
             {
-                button.Clicked += PlaceMines;
+                button.Clicked += StartGame;
             }
 
         } 
             
-        private void PlaceMines(object sender, EventArgs e)
+        private void StartGame(object sender, EventArgs e)
         { 
             List<string> MineLocations = new List<string>();
             string a; 
             foreach(MineButton button in MineGrid.Children)
             {
-                button.Clicked -= PlaceMines; 
+                button.Clicked -= StartGame; 
             }
 
-            for(int counter = 0; counter < mineGrid._nbrMines; counter++)
+            mineGrid.PlaceMines(); 
+            
+           foreach(MineButton button in MineGrid.Children)
             {
-                int r_I = random.Next(0,mineGrid._nbrMines);
-                int c_I = random.Next(0, mineGrid._nbrMines);
-                MineButton mine = new MineButton();
-                mine.Text = "*";
-                mine.TextColor = Color.Black;
-                mine.isMine = true; 
-                mine.FontSize = 15;
-                mine.BackgroundColor = Color.White;
-                mine.rowPosition = r_I; mine.columnPosition = c_I; 
-                //mine.Clicked += MineClicked;
-                MineLocations.Add($"{mine.rowPosition} , {mine.columnPosition}");
-                MineGrid.Children.Add(mine, c_I, r_I);
-
-                
+                if (button.cellisMine == true)
+                    button.Text = "*"; 
             }
-            Sample.ItemsSource = MineLocations; // not necessary, just used to show that the location of MineButtons can be indexed. 
+   
 
         }
         
