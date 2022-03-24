@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Minesweeper",
-    "\\Minesweeper\\Minesweeper"
+    "\\Minesweeper\\Minesweeper",
+    "\\Minesweeper\\Minesweeper\\Views"
   ],
-  "SelectedNode": "\\Minesweeper.sln",
+  "SelectedNode": "\\Minesweeper\\Minesweeper\\Views\\GameStart.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
