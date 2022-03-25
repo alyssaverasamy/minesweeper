@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Minesweeper"
+    "\\Minesweeper",
+    "\\Minesweeper\\Minesweeper",
+    "\\Minesweeper\\Minesweeper\\Controls",
+    "\\Minesweeper\\Minesweeper\\Logic",
+    "\\Minesweeper\\Minesweeper\\Views"
   ],
   "SelectedNode": "\\Minesweeper.sln",
   "PreviewInSolutionExplorer": false
