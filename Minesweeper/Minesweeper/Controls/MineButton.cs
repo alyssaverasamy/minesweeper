@@ -13,17 +13,17 @@ namespace Minesweeper.Controls
         public int _rowPosition { get; set; }
         public int _columnPosition { get; set; }
 
-        internal MinesCellCondition _condition; 
+        internal int _nearbyMines;
 
-        public bool cellisMine;
+        public bool isMine;
 
-        public bool cellisFlagged; 
+        public bool isFlagged; 
 
-        public MineButton(int colPos, int rowPos, MinesCellCondition cellCondition)
+        public MineButton(int colPos, int rowPos, int cellCondition)
         {
-            this._rowPosition = rowPos;
-            this._columnPosition = colPos;
-            this._condition = cellCondition; 
+            _rowPosition = rowPos;
+            _columnPosition = colPos;
+            _nearbyMines = cellCondition; 
         }
       
     }

@@ -27,7 +27,7 @@ namespace Minesweeper.Logic
             {
                 for (int rowPosition = 0; rowPosition < _nbrRows; rowPosition++)
                 {
-                    MineButton button = new MineButton(colPosition,rowPosition,MinesCellCondition.CellEmpty);
+                    MineButton button = new MineButton(colPosition,rowPosition,0);
                     button.BackgroundColor = Color.LightGray;
                     _boxGrid[colPosition, rowPosition] = button;
                     
@@ -49,7 +49,7 @@ namespace Minesweeper.Logic
 
         public int CountMines(int xPos, int yPos) // Method is used to check the nearby surroudings of cell. User enters the cell                                             
         {                                         // position (column# = xPos -- row# = yPos) 
-            int mines = 0; 
+            int mines = 0;
 
             for(int x = xPos - 1; x < xPos + 2; x++) //iteration starts in the position next to cell we are checking 
             {                                        //continues until it reaches the position to the right of cell. 
@@ -73,67 +73,8 @@ namespace Minesweeper.Logic
 
         public void CellCondition()  //Checks the condition of each cell in the array using the CountMines methods, and sets the MineCellCondition using the a switch function. 
         {
-            foreach(MineButton element in _boxGrid)
-            {
-                switch(CountMines(element._columnPosition, element._rowPosition))
-                {
-                    case 0:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellEmpty; 
-                        break;
-                    case 1:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearOne; 
-                        break;
-                    case 2:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearTwo; 
-                        break;
-                    case 3:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearThree; 
-                        break;
-                    case 4:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearFour; 
-                        break;
-                    case 5: 
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearFour;
-                        break;
-                    case 6:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearSix;
-                        break;
-                    case 7:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearSeven; 
-                        break;
-                    case 8:
-                        if (element.cellisMine == true)
-                            element._condition = MinesCellCondition.CellisMine;
-                        else
-                            element._condition = MinesCellCondition.CellNearEight; 
-                        break;
-
-                }
-            }
+            foreach(MineButton cell in _boxGrid)
+                cell._nearbyMines = CountMines(cell._rowPosition, cell._columnPosition);
         }
     }
 }
