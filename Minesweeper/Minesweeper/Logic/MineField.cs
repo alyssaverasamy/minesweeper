@@ -36,45 +36,43 @@ namespace Minesweeper.Logic
             }
         }
 
-        public void PlaceMines() //Randomly places mines in the created array 
+        public void PlaceMines() // randomly place mines in grid
         {
+            int col;
+            int row;
+
             for (int mine = 0; mine < _nbrMines; mine++)
             {
-                int x = random.Next(0,_nbrCols);
-                int y = random.Next(0,_nbrRows);
+                do
+                {
+                    col = random.Next(0, _nbrCols);
+                    row = random.Next(0, _nbrRows);
+                }
+                while (_boxGrid[col, row].isMine); // prevent overlap
 
-                _boxGrid[x,y].cellisMine = true;    
+                _boxGrid[col, row].isMine = true;
             }
         }
 
-        public int CountMines(int xPos, int yPos) // Method is used to check the nearby surroudings of cell. User enters the cell                                             
-        {                                         // position (column# = xPos -- row# = yPos) 
+        public int CountMines(int cellRow, int cellCol) // count mines adjacent to cell                             
+        {                                         
             int mines = 0;
+            if (_boxGrid[cellRow, cellCol].isMine)
+                return 0; // if mine, don't need to count adjacent mines
 
-            for(int x = xPos - 1; x < xPos + 2; x++) //iteration starts in the position next to cell we are checking 
-            {                                        //continues until it reaches the position to the right of cell. 
-                if(x < 0 || x >= _nbrCols)
-                {
-                    continue;                   //If the column does not exist inside the grid, skip to next code block 
-                }
-                for(int y = yPos - 1; y < yPos + 2; y++) //Starts 1 position above cell and ends 1 position below cell 
-                {
-                    if((y < 0 || y >= _nbrRows) || (x == xPos && y == yPos)) //If the row does not exist within grid or the current                                                                           
-                    {                                                        //Column and Row is the same as the cell we are checking
-                        continue;                                            // skip to next iteration                    
-                    }
-                    if (_boxGrid[x, y].cellisMine == true)                   //using the currently value of iteration we check if the 
-                        mines++;                                             //cell in that position is a mine, if so mine ++ 
-                    
-                }
-            }
-            return mines;                                                    // the function returns the overall count of mines nearby
+            for (int col = cellCol - 1; col < cellCol + 2; col++)
+                for (int row = cellRow - 1; row < cellRow + 2; row++)// checks all adjacent cells
+                    if(0 <= col && col < _nbrCols && 0 <= row && row < _nbrRows) // check valid coordinates                                                               // 
+                        if (_boxGrid[row, col].isMine && (row, col) != (cellRow, cellCol)) // omits center cell
+                            mines++;
+            return mines;
         }
+
 
         public void CellCondition()  //Checks the condition of each cell in the array using the CountMines methods, and sets the MineCellCondition using the a switch function. 
         {
             foreach(MineButton cell in _boxGrid)
-                cell._nearbyMines = CountMines(cell._rowPosition, cell._columnPosition);
+                cell._nearbyMines = CountMines(cell.Row, cell.Column);
         }
     }
 }
