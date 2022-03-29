@@ -18,14 +18,14 @@ namespace Minesweeper.Views //this is sample page template page, will not be inc
         {
             InitializeComponent();
 
-            for (int rows = 0; rows < mineGrid._nbrRows; rows++)
+            for (int rows = 0; rows < mineGrid.NumRows; rows++)
             {
                 MineGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
                 MineGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                for (int cols = 0; cols < mineGrid._nbrCols; cols++)
+                for (int cols = 0; cols < mineGrid.NumCols; cols++)
                 {
 
-                    MineGrid.Children.Add(mineGrid._boxGrid[rows, cols], rows, cols);
+                    MineGrid.Children.Add(mineGrid.BoxGrid[rows, cols], rows, cols);
                 }
 
             }
@@ -50,7 +50,7 @@ namespace Minesweeper.Views //this is sample page template page, will not be inc
             
            foreach(MineButton button in MineGrid.Children)
             {
-                if (button.cellisMine == true)
+                if (button.isMine == true)
                     button.Text = "*"; 
             }
    
