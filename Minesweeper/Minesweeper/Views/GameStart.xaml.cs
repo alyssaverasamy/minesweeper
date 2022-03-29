@@ -12,7 +12,7 @@ namespace Minesweeper.Views //this is sample page template page, will not be inc
 {
     public partial class GameStart : ContentPage
     {
-        MineField mineGrid = new MineField(10, 10, 10);
+        MineField mineGrid = new MineField(10, 8, 10);
         Random random = new Random();
         public GameStart()
         {
@@ -25,7 +25,7 @@ namespace Minesweeper.Views //this is sample page template page, will not be inc
                 for (int cols = 0; cols < mineGrid.NumCols; cols++)
                 {
 
-                    MineGrid.Children.Add(mineGrid.BoxGrid[rows, cols], rows, cols);
+                    MineGrid.Children.Add(mineGrid.BoxGrid[rows, cols], cols, rows);
                 }
 
             }
@@ -50,9 +50,9 @@ namespace Minesweeper.Views //this is sample page template page, will not be inc
             
            foreach(MineButton button in MineGrid.Children)
             {
-                if (button.isMine == true)
-                    button.Text = "*"; 
-            }
+                if (button.isMine == true);
+                    //button.Text = $"({button.Row},{button.Column})"; Just used to test of the Grid adds the button from the arry
+            }                                                          //in the right order. 
    
 
         }

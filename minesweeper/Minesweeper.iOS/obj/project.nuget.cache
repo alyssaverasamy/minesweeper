@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yfbeT0ziAZq84qZ09YUuJS1x+uSSIKH/X3rWL1CY4Ef4R61hOZJKuuDC6pS6OU27zLGQ8yOpOgIHmfvszXiaEg==",
+  "dgSpecHash": "t22QbdQIiVmm/xNp4T+fjY9StsbMggy2hoEwCIHwUiOsaL/MYu8FF4xz2b46r1nl7pAV77e1patSzr8mXEHkUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.iOS\\Minesweeper.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper.iOS\\Minesweeper.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tejas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Tejas\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",

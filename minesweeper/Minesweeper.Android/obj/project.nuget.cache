@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yiGN1UouYLJNoXx8cC0MpF90dHPIx4Oczpzw01qLHkd/gduMBnkIRLEkdXbj6lGz9VvfrIIWBCrwYFmag1AzNQ==",
+  "dgSpecHash": "3bcV+jYx3njMWk3hYimY3l6f1fLiRluSwEFzsIYJFDMdCGgA9SqOy80dwE+wRtHQb7wMHQk5RW7iWl3BXXAjIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
+  "projectFilePath": "C:\\Users\\Tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tejas\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Tejas\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

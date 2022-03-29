@@ -55,14 +55,14 @@ namespace Minesweeper.Logic
             NumCols = numCols;
             NumMines = numMines;
 
-            BoxGrid = new MineButton[NumCols, NumRows];
-            for (int col = 0; col < numRows; col++)
+            BoxGrid = new MineButton[NumRows, NumCols];
+            for (int row = 0; row < numRows; row++)
             {
-                for (int row = 0; row < NumRows; row++)
+                for (int col = 0; col < NumCols; col++)
                 {
-                    MineButton button = new MineButton(col,row,0);
+                    MineButton button = new MineButton(row,col,0);
                     button.BackgroundColor = Color.LightGray;
-                    BoxGrid[col, row] = button;
+                    BoxGrid[row, col] = button;
                 }
             }
         }
@@ -79,9 +79,9 @@ namespace Minesweeper.Logic
                     col = random.Next(0, NumCols);
                     row = random.Next(0, NumRows);
                 }
-                while (BoxGrid[col, row].isMine); // prevent overlap
+                while (BoxGrid[row, col].isMine); // prevent overlap
 
-                BoxGrid[col, row].isMine = true;
+                BoxGrid[row, col].isMine = true;
             }
         }
 
@@ -91,8 +91,8 @@ namespace Minesweeper.Logic
             if (BoxGrid[cellRow, cellCol].isMine)
                 return 0; // if mine, don't need to count adjacent mines
 
-            for (int col = cellCol - 1; col < cellCol + 2; col++)
-                for (int row = cellRow - 1; row < cellRow + 2; row++)// checks all adjacent cells
+            for (int row = cellRow - 1; row < cellRow + 2; row++)
+                for (int col = cellCol - 1; col < cellCol + 2; col++)// checks all adjacent cells
                     if(0 <= col && col < NumCols && 0 <= row && row < NumRows) // check valid coordinates                                                               // 
                         if (BoxGrid[row, col].isMine && (row, col) != (cellRow, cellCol)) // omits center cell
                             mines++;

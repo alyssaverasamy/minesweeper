@@ -3178,11 +3178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
       "projectName": "Minesweeper.Android",
-      "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
+      "projectPath": "C:\\Users\\Tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\Minesweeper.Android.csproj",
       "packagesPath": "C:\\Users\\Tejas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper.Android\\obj\\",
+      "outputPath": "C:\\Users\\Tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3203,8 +3203,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj": {
-              "projectPath": "C:\\Users\\Tejas\\Source\\Repos\\MineSweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj"
+            "C:\\Users\\Tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj": {
+              "projectPath": "C:\\Users\\Tejas\\source\\repos\\minesweeper\\Minesweeper\\Minesweeper\\Minesweeper.csproj"
             }
           }
         }
