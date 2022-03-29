@@ -10,28 +10,59 @@ namespace Minesweeper.Logic
     internal class MineField
     {
         Random random = new Random();
-        public int _nbrRows;
-        public int _nbrCols;
+        private int _numRows;
+        private int _numCols;
+        private int _numMines;
 
-        public MineButton[,] _boxGrid;
-        public int _nbrMines;
-
-        public MineField(int nbrRows, int nbrCols, int nbrMines)
+        public int NumRows
         {
-            _nbrRows = nbrRows;
-            _nbrCols = nbrCols;
-            _nbrMines = nbrMines;
-
-            _boxGrid = new MineButton[_nbrCols, _nbrRows];
-            for (int colPosition = 0; colPosition < _nbrCols; colPosition++)
+            get => _numRows;
+            set
             {
-                for (int rowPosition = 0; rowPosition < _nbrRows; rowPosition++)
-                {
-                    MineButton button = new MineButton(colPosition,rowPosition,0);
-                    button.BackgroundColor = Color.LightGray;
-                    _boxGrid[colPosition, rowPosition] = button;
-                    
+                if (value <= 0)
+                    throw new Exception("number of rows must be greater than zero.");
+                _numRows = value;
+            }
+        }
 
+        public int NumCols
+        {
+            get => _numCols;
+            set
+            {
+                if (value <= 0)
+                    throw new Exception("number of columns must be greater than zero.");
+                _numCols = value;
+            }
+        }
+
+        public int NumMines
+        {
+            get => _numMines;
+            set
+            {
+                if (value >= _numRows * _numCols)
+                    throw new Exception("grid must have at least one non-mine cell.");
+                _numMines = value;
+            }
+        }
+
+        public MineButton[,] BoxGrid;
+
+        public MineField(int numRows, int numCols, int numMines)
+        {
+            NumRows = numRows;
+            NumCols = numCols;
+            NumMines = numMines;
+
+            BoxGrid = new MineButton[NumCols, NumRows];
+            for (int col = 0; col < numRows; col++)
+            {
+                for (int row = 0; row < NumRows; row++)
+                {
+                    MineButton button = new MineButton(col,row,0);
+                    button.BackgroundColor = Color.LightGray;
+                    BoxGrid[col, row] = button;
                 }
             }
         }
@@ -41,29 +72,29 @@ namespace Minesweeper.Logic
             int col;
             int row;
 
-            for (int mine = 0; mine < _nbrMines; mine++)
+            for (int mine = 0; mine < NumMines; mine++)
             {
                 do
                 {
-                    col = random.Next(0, _nbrCols);
-                    row = random.Next(0, _nbrRows);
+                    col = random.Next(0, NumCols);
+                    row = random.Next(0, NumRows);
                 }
-                while (_boxGrid[col, row].isMine); // prevent overlap
+                while (BoxGrid[col, row].isMine); // prevent overlap
 
-                _boxGrid[col, row].isMine = true;
+                BoxGrid[col, row].isMine = true;
             }
         }
 
         public int CountMines(int cellRow, int cellCol) // count mines adjacent to cell                             
         {                                         
             int mines = 0;
-            if (_boxGrid[cellRow, cellCol].isMine)
+            if (BoxGrid[cellRow, cellCol].isMine)
                 return 0; // if mine, don't need to count adjacent mines
 
             for (int col = cellCol - 1; col < cellCol + 2; col++)
                 for (int row = cellRow - 1; row < cellRow + 2; row++)// checks all adjacent cells
-                    if(0 <= col && col < _nbrCols && 0 <= row && row < _nbrRows) // check valid coordinates                                                               // 
-                        if (_boxGrid[row, col].isMine && (row, col) != (cellRow, cellCol)) // omits center cell
+                    if(0 <= col && col < NumCols && 0 <= row && row < NumRows) // check valid coordinates                                                               // 
+                        if (BoxGrid[row, col].isMine && (row, col) != (cellRow, cellCol)) // omits center cell
                             mines++;
             return mines;
         }
@@ -71,7 +102,7 @@ namespace Minesweeper.Logic
 
         public void CellCondition()  //Checks the condition of each cell in the array using the CountMines methods, and sets the MineCellCondition using the a switch function. 
         {
-            foreach(MineButton cell in _boxGrid)
+            foreach(MineButton cell in BoxGrid)
                 cell._nearbyMines = CountMines(cell.Row, cell.Column);
         }
     }
