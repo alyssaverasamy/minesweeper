@@ -13,6 +13,12 @@
 
                 </Grid>
             </ScrollView>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Dig"></Label>
+                <Button x:Name="DigBtn" Clicked="SwitchtoDig" Text="*" BackgroundColor="LightPink"></Button>
+                <Label Text="Flag"></Label>
+                <Button x:Name="FlagBtn" Clicked="SwitchtoFlag" Text="~" BackgroundColor="LightBlue" ></Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

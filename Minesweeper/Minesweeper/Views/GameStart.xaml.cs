@@ -39,23 +39,25 @@ namespace Minesweeper.Views //this is sample page template page, will not be inc
             
         private void StartGame(object sender, EventArgs e)
         { 
-            List<string> MineLocations = new List<string>();
-            string a; 
             foreach(MineButton button in MineGrid.Children)
             {
                 button.Clicked -= StartGame; 
             }
 
-            mineGrid.PlaceMines(); 
-            
-           foreach(MineButton button in MineGrid.Children)
-            {
-                if (button.isMine == true);
-                    //button.Text = $"({button.Row},{button.Column})"; Just used to test of the Grid adds the button from the arry
-            }                                                          //in the right order. 
-   
-
+            mineGrid.PlaceMines();
+            mineGrid.CellCondition();
         }
-        
+
+        private void SwitchtoDig(object sender, EventArgs e)
+        {
+            DigBtn.IsEnabled = false;
+            FlagBtn.IsEnabled = true;
+        }
+
+        private void SwitchtoFlag(object sender, EventArgs e)
+        {
+            FlagBtn.IsEnabled = false;
+            DigBtn.IsEnabled = true;
+        }
     }
 }
