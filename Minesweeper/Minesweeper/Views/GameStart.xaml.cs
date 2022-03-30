@@ -8,8 +8,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Minesweeper.Logic; using Minesweeper.Controls; 
 
-namespace Minesweeper.Views //this is sample page template page, will not be included in the end product of the project. 
-{
+namespace Minesweeper.Views //this is sample page template page, willbe included in the end product of the project but will not be 
+{                           // used in any capacity.                                 
     public partial class GameStart : ContentPage
     {
         MineField mineGrid = new MineField(10, 8, 10);
