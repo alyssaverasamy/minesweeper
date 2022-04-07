@@ -21,10 +21,11 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
             for (int rows = 0; rows < mineGrid.NumRows; rows++)
             {
                 MineGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-                MineGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                MineGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }); 
+                ;
                 for (int cols = 0; cols < mineGrid.NumCols; cols++)
                 {
-
+                    
                     MineGrid.Children.Add(mineGrid.BoxGrid[rows, cols], cols, rows);
                 }
 
