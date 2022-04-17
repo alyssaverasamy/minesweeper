@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using Minesweeper.Logic; using Minesweeper.Controls; 
 
 namespace Minesweeper.Views //this is sample page template page, willbe included in the end product of the project but will not be 
@@ -20,8 +19,8 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
 
             for (int rows = 0; rows < mineGrid.NumRows; rows++)
             {
-                MineGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-                MineGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }); 
+                MineGrid.RowDefinitions.Add(new RowDefinition { });
+                MineGrid.ColumnDefinitions.Add(new ColumnDefinition { });
                 ;
                 for (int cols = 0; cols < mineGrid.NumCols; cols++)
                 {
@@ -74,11 +73,27 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
 
         private void DigCell(MineButton button)
         {
-            if (button.isMine)
-                GameOver();
-            else
+            if (button.IsEnabled)
             {
-                button.Text = button._nearbyMines.ToString();
+                button.IsEnabled = false;
+                if (button.isMine)
+                {
+                    button.Source = "mineExplode.png";
+                    GameOver();
+                }
+                else
+                {
+                    button.Source = $"num{button._nearbyMines}.png";
+
+                    if (button._nearbyMines == 0)
+                    {
+                        for (int row = button.Row - 1; row < button.Row + 2; row++)
+                            for (int col = button.Column - 1; col < button.Column + 2; col++)// checks all adjacent cells
+                                if (0 <= col && col < mineGrid.NumCols && 0 <= row && row < mineGrid.NumRows) // check valid coordinates                                                               // 
+                                    if ((row, col) != (button.Row, button.Column)) // omits center cell
+                                        DigCell(mineGrid.BoxGrid[row, col]);
+                    }
+                }
             }
         }
 
@@ -86,16 +101,16 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
         private void FlagCell(MineButton button)
         {
             button.isFlagged=true;
-            button.Text="~";
+            //button.Text="~";
         }
+
         private void GameOver()
         {
             foreach (MineButton button in MineGrid.Children)
             {
                 if (button.isMine)
                 {
-                    button.Text="*";
-                    button.TextColor = Color.Red;
+                    button.Source = "mineReveal.png";
                 }
             }
 

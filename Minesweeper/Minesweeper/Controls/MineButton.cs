@@ -7,7 +7,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Minesweeper.Controls
 {
-    internal class MineButton : Button
+    internal class MineButton : ImageButton
     {
        
         public int Row { get; set; }

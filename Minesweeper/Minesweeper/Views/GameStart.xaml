@@ -8,11 +8,9 @@
                 <Label Text="Sample"></Label>
                 <Label Text="Sample"></Label>
             </StackLayout>
-            <ScrollView>
-                <Grid x:Name="MineGrid" RowSpacing ="1" ColumnSpacing="1">
+            <Grid x:Name="MineGrid" RowSpacing="1" ColumnSpacing="1">
 
-                </Grid>
-            </ScrollView>
+            </Grid>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Dig"></Label>
                 <Button x:Name="DigBtn" Clicked="SwitchtoDig" Text="*" BackgroundColor="LightPink"></Button>

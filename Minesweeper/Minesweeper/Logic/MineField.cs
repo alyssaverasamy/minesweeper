@@ -61,7 +61,8 @@ namespace Minesweeper.Logic
                 for (int col = 0; col < NumCols; col++)
                 {
                     MineButton button = new MineButton(row,col,0);
-                    button.BackgroundColor = Color.LightGray;
+                    button.Source = "hiddenCell.png";
+                    button.Aspect = Aspect.AspectFill;
                     BoxGrid[row, col] = button;
                 }
             }
