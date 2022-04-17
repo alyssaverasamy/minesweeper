@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minesweeper.Views.PlayerScores">
+    <ContentPage.Content>
+        <Grid ColumnDefinitions="*,*">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <ListView x:Name="LstofPlayers" Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Label Text="ID:" TextColor="DarkGray" FontSize="Medium"/>
+                                    <Label Text="{Binding PlayerID}" TextColor="Blue" FontSize="Medium"/>
+                                    <Label Text="Name:" TextColor="DarkGray" FontSize="Medium"/>
+                                    <Label Text="{Binding PlayerName}" TextColor="SeaGreen" FontSize="Medium"/>
+                                    <Label Text="Score:" TextColor="DarkGray" FontSize="Medium"/>
+                                    <Label Text="{Binding PlayerWins, Mode=TwoWay}" TextColor="OrangeRed" FontSize="Medium"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Text="All Players" TextColor="SteelBlue" HorizontalOptions="Center" VerticalOptions="Center"
+                   Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" FontSize="Large"/>
+            <Grid Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Entry x:Name="EntID" HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Grid.Row="0"
+                       Placeholder="Enter New ID"
+                       PlaceholderColor="Blue"/>
+
+                <Entry x:Name="EntName" HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Grid.Row="1"
+                       Placeholder="Enter New Player Name"
+                       PlaceholderColor="SeaGreen"/>
+            </Grid>
+
+            <Button Text="Add New Player" BackgroundColor="LightGray" Clicked="AddPLayer_Clicked"
+                    Grid.Row="4" Grid.Column="0"/>
+            <Button Text="Update Player Score" BackgroundColor="LightGray" Clicked="UpdatePlayer_Clicked"
+                    Grid.Row="5" Grid.Column="0"/>
+            <Button Text="Save Players " BackgroundColor="LightSteelBlue" Clicked="SaveAll"
+                    Grid.Row="6" Grid.Column="0"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
