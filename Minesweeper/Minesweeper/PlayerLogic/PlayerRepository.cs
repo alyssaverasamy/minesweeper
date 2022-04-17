@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
-using Mine.AppService;
+using Minesweeper.GameService;
 
-namespace Mine.PlayerLogic
+namespace Minesweeper.PlayerLogic
 {
     internal class PlayerRepository
     {

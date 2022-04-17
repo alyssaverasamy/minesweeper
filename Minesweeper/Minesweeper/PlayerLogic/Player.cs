@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
-namespace Mine.PlayerLogic
+namespace Minesweeper.PlayerLogic
 {
     internal class Player : INotifyPropertyChanged
     {
