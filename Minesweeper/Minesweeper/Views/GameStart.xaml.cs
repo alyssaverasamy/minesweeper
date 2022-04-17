@@ -49,31 +49,34 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
             mineGrid.CellCondition();
         }
 
-        private void SwitchtoDig(object sender, EventArgs e)
-        {
-            DigBtn.IsEnabled = false;
-            FlagBtn.IsEnabled = true;
-        }
+        //private void SwitchtoDig(object sender, EventArgs e)
+        //{
+        //    DigBtn.IsEnabled = false;
+        //    FlagBtn.IsEnabled = true;
+        //}
 
-        private void SwitchtoFlag(object sender, EventArgs e)
-        {
-            FlagBtn.IsEnabled = false;
-            DigBtn.IsEnabled = true;
-        }
+        //private void SwitchtoFlag(object sender, EventArgs e)
+        //{
+        //    FlagBtn.IsEnabled = false;
+        //    DigBtn.IsEnabled = true;
+        //}
 
         private void PlayGame(object sender, EventArgs e)
         {
-
-            if (FlagBtn.IsEnabled)
-                DigCell(sender as MineButton);
-
-            if (DigBtn.IsEnabled)
+            if (ToggleFlag.IsToggled)
                 FlagCell(sender as MineButton);
+            else
+                DigCell(sender as MineButton);
+            //if (FlagBtn.IsEnabled)
+            //    DigCell(sender as MineButton);
+
+            //if (DigBtn.IsEnabled)
+            //    FlagCell(sender as MineButton);
         }
 
         private void DigCell(MineButton button)
         {
-            if (button.IsEnabled)
+            if (button.IsEnabled && !button.isFlagged)
             {
                 button.IsEnabled = false;
                 if (button.isMine)
@@ -100,8 +103,17 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
 
         private void FlagCell(MineButton button)
         {
-            button.isFlagged=true;
-            //button.Text="~";
+            if (button.isFlagged)
+            {
+                button.Source = "hiddenCell.png";
+                button.isFlagged = false;
+            }
+            else
+            {
+                button.Source = "flagCell.png";
+                button.isFlagged = true;
+            }
+            
         }
 
         private void GameOver()
