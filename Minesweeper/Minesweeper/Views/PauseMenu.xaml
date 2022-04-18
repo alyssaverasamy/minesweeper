@@ -22,9 +22,6 @@
                 Text="rules"
                 Style="{StaticResource buttonStyle}"
                 Clicked="RulesButton_OnClicked"></Button>
-        <Button x:Name="mainMenu"
-                Text="menu"
-                Style="{StaticResource buttonStyle}"></Button>
 
     </StackLayout>
 </ContentPage>

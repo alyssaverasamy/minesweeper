@@ -24,7 +24,7 @@
         <Label Text="A certain number of these cells will be mines, which, if uncovered, will end the game."/>
         <Label Text="To start, tap any of the cells in the grid to uncover it."/>
         <Label Text="The number shown in each cell tells you how many mines are in its adjacent cells."/>
-        <Label Text="You can flag covered cells that you suspect to be mines by long-pressing the cell."/>
+        <Label Text="You can flag/unflag covered cells that you suspect to be mines by tapping the cell while the toggle switch is set to the ON position."/>
 
         <Button x:Name="mainmenuButton"
                 Text="back"
