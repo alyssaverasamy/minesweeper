@@ -10,9 +10,9 @@ namespace Minesweeper.Controls
 {
     internal class MineButton : ImageButton
     {
-       
-        public int Row { get; set; }
-        public int Column { get; set; }
+
+        public int Row => _row;
+        public int Column => _column; 
 
         internal int _nearbyMines;
 
@@ -21,10 +21,13 @@ namespace Minesweeper.Controls
         public bool isFlagged;
 
 
+        private int _row;    
+        private int _column; 
+
         public MineButton(int row, int column, int cellCondition)
         {
-            Row = row;
-            Column = column;
+            _row = row;
+            _column = column;
             _nearbyMines = cellCondition; 
         }
       
