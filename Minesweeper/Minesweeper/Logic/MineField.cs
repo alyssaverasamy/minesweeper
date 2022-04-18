@@ -61,14 +61,13 @@ namespace Minesweeper.Logic
                 for (int col = 0; col < NumCols; col++)
                 {
                     MineButton button = new MineButton(row,col,0);
-                    button.Source = "hiddenCell.png";
-                    button.Aspect = Aspect.AspectFill;
                     BoxGrid[row, col] = button;
                 }
             }
         }
 
-        public void PlaceMines() // randomly place mines in grid
+        // randomly place mines in grid anywhere except [startRow, startCol]
+        public void PlaceMines(int startRow, int startCol) 
         {
             int col;
             int row;
@@ -80,7 +79,8 @@ namespace Minesweeper.Logic
                     col = random.Next(0, NumCols);
                     row = random.Next(0, NumRows);
                 }
-                while (BoxGrid[row, col].isMine); // prevent overlap
+                // prevent overlap or mine on starting cell
+                while (BoxGrid[row, col].isMine | (row,col) == (startRow,startCol));
 
                 BoxGrid[row, col].isMine = true;
             }

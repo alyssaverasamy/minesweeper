@@ -13,6 +13,7 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
     {
         MineField mineGrid = new MineField(10, 8, 10);
         Random random = new Random();
+
         public GameStart()
         {
             InitializeComponent();
@@ -21,20 +22,13 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
             {
                 MineGrid.RowDefinitions.Add(new RowDefinition { });
                 MineGrid.ColumnDefinitions.Add(new ColumnDefinition { });
-                ;
+                
                 for (int cols = 0; cols < mineGrid.NumCols; cols++)
-                {
-                    
                     MineGrid.Children.Add(mineGrid.BoxGrid[rows, cols], cols, rows);
-                }
-
             }
 
             foreach(MineButton button in MineGrid.Children)
-            {
                 button.Clicked += StartGame;
-            }
-
         } 
             
         private void StartGame(object sender, EventArgs e)
@@ -45,33 +39,18 @@ namespace Minesweeper.Views //this is sample page template page, willbe included
                 button.Clicked += PlayGame; 
             }
 
-            mineGrid.PlaceMines();
+            MineButton startCell = (MineButton)sender;
+
+            mineGrid.PlaceMines(startCell.Row,startCell.Column);
             mineGrid.CellCondition();
         }
 
-        //private void SwitchtoDig(object sender, EventArgs e)
-        //{
-        //    DigBtn.IsEnabled = false;
-        //    FlagBtn.IsEnabled = true;
-        //}
-
-        //private void SwitchtoFlag(object sender, EventArgs e)
-        //{
-        //    FlagBtn.IsEnabled = false;
-        //    DigBtn.IsEnabled = true;
-        //}
-
         private void PlayGame(object sender, EventArgs e)
         {
-            if (ToggleFlag.IsToggled)
+            if (ToggleFlag.IsToggled) // switch on -> flag
                 FlagCell(sender as MineButton);
-            else
+            else // switch off -> dig
                 DigCell(sender as MineButton);
-            //if (FlagBtn.IsEnabled)
-            //    DigCell(sender as MineButton);
-
-            //if (DigBtn.IsEnabled)
-            //    FlagCell(sender as MineButton);
         }
 
         private void DigCell(MineButton button)
