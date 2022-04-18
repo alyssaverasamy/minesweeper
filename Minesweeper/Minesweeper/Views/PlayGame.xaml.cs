@@ -126,7 +126,7 @@ namespace Minesweeper
             await Navigation.PushAsync(new PlayerScores());
         }
 
-        private async void LoseGame(int bombRow, int bombCol)
+        private void LoseGame(int bombRow, int bombCol)
         {
             foreach (MineButton cell in mineGridLayout.Children)
             {
@@ -141,9 +141,7 @@ namespace Minesweeper
             }
 
 
-            await DisplayAlert("game over", "sorry", "ok");
-
-            await Navigation.PushAsync(new PlayerScores());
+            DisplayAlert("game over", "sorry", "ok");
         }
     }
 }
