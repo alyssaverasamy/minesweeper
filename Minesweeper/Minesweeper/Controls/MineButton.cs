@@ -4,6 +4,7 @@ using System.Text;
 using Minesweeper.Logic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+//author: tejas, code cleanup: alyssa
 
 namespace Minesweeper.Controls
 {
