@@ -13,6 +13,7 @@ namespace Minesweeper
 
             MainPage = new NavigationPage(new MainPage());
             //MainPage = new GameStart();  // temporary
+            //MainPage = new PlayerScores(); // used to test PlayerScores page 
         }
 
         protected override void OnStart ()
