@@ -11,13 +11,13 @@
             <Button x:Name="pauseButton"
                     Text="pause"
                     Style="{StaticResource buttonStyle}"
+                    HorizontalOptions="Center"
                     Clicked="PauseButton_OnClicked"/>
 
             <StackLayout Orientation="Vertical"
                          HorizontalOptions="EndAndExpand"
                          Margin="10">
                 <Label x:Name="minesLeft"
-                       Text=""
                        HorizontalOptions="End"
                        Style="{StaticResource counter}"/>
 

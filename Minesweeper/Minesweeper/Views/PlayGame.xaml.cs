@@ -14,12 +14,14 @@ namespace Minesweeper
     public partial class PlayGame : ContentPage
     {
         MineField mineField;
+        int flagCount = 0;
 
         public PlayGame (int numRows, int numCols, int numMines)
         {
             InitializeComponent ();
 
             mineField = new MineField(numRows, numCols, numMines);
+            minesLeft.Text = numMines.ToString();
 
             for (int row = 0; row < numRows; row++)
             {
@@ -35,8 +37,6 @@ namespace Minesweeper
                     mineGridLayout.Children.Add(cell, col, row);
                 }
             }
-
-            minesLeft.Text =  numMines.ToString();
         }
 
         private async void PauseButton_OnClicked(object sender, EventArgs e)
@@ -76,6 +76,10 @@ namespace Minesweeper
                 else
                 {
                     cell.Source = $"num{cell._nearbyMines}.png";
+                    mineField.numRevealed++;
+
+                    if (mineField.numRevealed == (mineField.NumRows * mineField.NumCols) - mineField.NumMines)
+                        WinGame();
 
                     if (cell._nearbyMines == 0)
                     {
@@ -96,13 +100,30 @@ namespace Minesweeper
             {
                 cell.Source = "hiddenCell.png";
                 cell.isFlagged = false;
+                flagCount--;
             }
             else
             {
                 cell.Source = "flagCell.png";
                 cell.isFlagged = true;
+                flagCount++;
+            }
+            minesLeft.Text = (mineField.NumMines - flagCount).ToString();
+        }
+
+        private async void WinGame()
+        {
+            foreach (MineButton cell in mineGridLayout.Children)
+            {
+                cell.IsEnabled = false;
+                if (cell.isMine)
+                    cell.Source = "flagCell.png";
             }
 
+
+            await DisplayAlert("you win!", "nice", "ok");
+
+            await Navigation.PushAsync(new PlayerScores());
         }
 
         private async void LoseGame(int bombRow, int bombCol)
@@ -118,10 +139,9 @@ namespace Minesweeper
                         cell.Source = "mineReveal.png";
                 }
             }
-                
 
 
-            await DisplayAlert("GameOver", "Sorry", "OK");
+            await DisplayAlert("game over", "sorry", "ok");
 
             await Navigation.PushAsync(new PlayerScores());
         }

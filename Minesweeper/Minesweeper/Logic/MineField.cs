@@ -15,6 +15,10 @@ namespace Minesweeper.Logic
         private int _numCols;
         private int _numMines;
 
+        public int numRevealed = 0;
+
+
+        // initialization of variables by alyssa
         public int NumRows
         {
             get => _numRows;
@@ -68,6 +72,7 @@ namespace Minesweeper.Logic
         }
 
         // randomly place mines in grid anywhere except [startRow, startCol]
+        // implementation of do/while loop and overlap prevention by alyssa
         public void PlaceMines(int startRow, int startCol) 
         {
             int col;
@@ -102,6 +107,7 @@ namespace Minesweeper.Logic
         }
 
 
+        //implementation by alyssa
         public void CellCondition()  //Checks the condition of each cell in the array using the CountMines methods, and sets the MineCellCondition using the a switch function. 
         {
             foreach(MineButton cell in BoxGrid)
