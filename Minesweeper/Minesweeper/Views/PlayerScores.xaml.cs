@@ -19,14 +19,14 @@ namespace Minesweeper.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlayerScores : ContentPage
     {
-        PlayerRepository playerRepository = new PlayerRepository();
+        PlayerRepository playerRepository = new PlayerRepository(); 
         IPlayerManager _playerManager;
 
         string _filePath = Path.Combine(FileSystem.AppDataDirectory, "players.csv");
 
         public PlayerScores()
         {
-            InitializeComponent();
+            InitializeComponent(); 
             _playerManager = new PlayerCSVManager(_filePath);
             ReadPlayers();
             LstofPlayers.ItemsSource = playerRepository.Players;
@@ -67,6 +67,7 @@ namespace Minesweeper.Views
                 Player foundPlayer = playerRepository.SearchPlayer(lookUp);
 
                 foundPlayer.PlayerWins++;
+                UpdateButton.IsEnabled = false; 
             }
             catch (Exception)
             {
@@ -98,6 +99,11 @@ namespace Minesweeper.Views
             {
                 DisplayAlert("Reading Error", "Cannot Read players", "OK");
             }
+        }
+
+        private void PlayerSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            UpdateButton.IsEnabled = true; 
         }
     }
 }

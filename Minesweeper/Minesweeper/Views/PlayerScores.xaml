@@ -7,24 +7,25 @@
         <Grid ColumnDefinitions="*,*"
               RowDefinitions="*,*,*,*,*,*,*">
 
-            <ListView x:Name="LstofPlayers" Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" HorizontalOptions="Center">
+            <ListView x:Name="LstofPlayers" Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" HorizontalOptions="Center" VerticalOptions="Center"
+                      ItemSelected="PlayerSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                                     <Label Text="ID:"
-                                           Style="{StaticResource text}"/>
+                                           />
                                     <Label Text="{Binding PlayerID}"
-                                           Style="{StaticResource text}"/>
+                                           />
                                     <Label Text="Name:"
-                                           Style="{StaticResource text}"/>
+                                           />
                                     <Label Text="{Binding PlayerName}"
-                                           Style="{StaticResource text}"/>
+                                           />
                                     <Label Text="Score:"
-                                           Style="{StaticResource text}"/>
+                                           />
                                     <Label Text="{Binding PlayerWins, Mode=TwoWay}"
-                                           Style="{StaticResource text}"/>
+                                           />
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
@@ -51,13 +52,13 @@
                        VerticalOptions="Start"
                        Grid.Row="1"
                        FontFamily="Fredoka"
-                       Placeholder="Enter New Player Name"/>
+                       Placeholder="Enter New Name"/>
             </Grid>
 
             <Button Text="Add New Player" Clicked="AddPLayer_Clicked"
                     Style="{StaticResource buttonStyle}"
                     Grid.Row="4" Grid.Column="0"/>
-            <Button Text="Update Player Score" Clicked="UpdatePlayer_Clicked"
+            <Button x:Name="UpdateButton" Text="Update Player Score" Clicked="UpdatePlayer_Clicked" IsEnabled="False"
                     Style="{StaticResource buttonStyle}"
                     Grid.Row="5" Grid.Column="0"/>
             <Button Text="Save Players " Clicked="SaveAll"
