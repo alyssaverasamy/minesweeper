@@ -25,7 +25,8 @@ namespace Minesweeper
 
         private async void ExpertButton_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PlayGame(30, 16, 99));
+            await Navigation.PushAsync(new PlayGame(25, 25, 99));
+
         }
     }
 }
