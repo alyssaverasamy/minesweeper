@@ -8,6 +8,7 @@ using Minesweeper.Views;
 using Minesweeper.PlayerLogic;
 
 // author: alyssa
+// some code in this file is collaborative work from the test file GameStart.xaml.cs
 
 namespace Minesweeper
 {    
@@ -73,7 +74,7 @@ namespace Minesweeper
                 cell.IsEnabled = false;
                 if (cell.isMine)
                     LoseGame(cell.Row, cell.Column);
-                else
+                else 
                 {
                     cell.Source = $"num{cell._nearbyMines}.png";
                     mineField.numRevealed++;
