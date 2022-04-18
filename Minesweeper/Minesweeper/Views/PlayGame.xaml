@@ -18,17 +18,21 @@
                          Margin="10">
                 <Label x:Name="minesLeft"
                        Text=""
+                       HorizontalOptions="End"
                        Style="{StaticResource counter}"/>
 
-                <Label x:Name="timer"
-                       Text="xx:xx"
-                       Style="{StaticResource counter}"/>
-                <Switch x:Name="ToggleFlag"
-                        IsToggled="False"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="flag"
+                           Style="{StaticResource text}"/>
+                    <Switch x:Name="ToggleFlag"
+                            IsToggled="False"/>
+                </StackLayout>
+                
             </StackLayout>
         </StackLayout>
 
-        <Grid x:Name="mineGridLayout" ColumnSpacing="1" RowSpacing="1">
+        <Grid x:Name="mineGridLayout"
+              ColumnSpacing="1" RowSpacing="1">
 
         </Grid>
 

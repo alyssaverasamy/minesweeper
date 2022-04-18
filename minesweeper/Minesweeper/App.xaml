@@ -14,10 +14,6 @@
                         Value="#9FA8DA"/>
                 <Setter Property="BorderWidth"
                         Value="2"/>
-                <Setter Property="HorizontalOptions"
-                        Value="Center"/>
-                <Setter Property="Margin"
-                        Value="10"/>
                 <Setter Property="CornerRadius"
                         Value="50"/>
                 <Setter Property="TextColor"
@@ -28,12 +24,9 @@
                         Value="Fredoka"/>
             </Style>
 
-            <Style x:Key="pageStyle"
-                   TargetType="ContentPage">
-
+            <Style TargetType="ContentPage">
                 <Setter Property="BackgroundColor"
                         Value="#fafafa"/>
-
             </Style>
 
             <Style x:Key="centeredStackLayout"
@@ -59,12 +52,30 @@
                         Value="Lowercase"/>
             </Style>
 
+            <Style x:Key="maintitle"
+                   TargetType="Label"
+                   BasedOn="{StaticResource title}">
+                <Setter Property="FontFamily"
+                        Value="BalooThambi"/>
+                <Setter Property="FontSize"
+                        Value="50"/>
+                <Setter Property="TextColor"
+                        Value="#9fa8da"/> 
+            </Style>
+
             <Style x:Key="counter"
                    TargetType="Label">
                 <Setter Property="FontSize"
                         Value="Title"/>
                 <Setter Property="FontFamily"
                         Value="Fredoka"/>
+            </Style>
+
+            <Style x:Key="text"
+                   TargetType="Label"
+                   BasedOn="{StaticResource title}">
+                <Setter Property="FontSize"
+                        Value="Body"/>
             </Style>
 
         </ResourceDictionary>
