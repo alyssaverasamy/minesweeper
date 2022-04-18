@@ -105,5 +105,11 @@ namespace Minesweeper.Views
         {
             UpdateButton.IsEnabled = true; 
         }
+
+        private async void BackToMenu_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync(); 
+
+        }
     }
 }

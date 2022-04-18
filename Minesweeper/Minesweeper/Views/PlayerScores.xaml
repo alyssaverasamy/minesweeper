@@ -64,6 +64,9 @@
             <Button Text="Save Players " Clicked="SaveAll"
                     Style="{StaticResource buttonStyle}"
                     Grid.Row="6" Grid.Column="0"/>
+            <Button Text="Main Menu " Clicked="BackToMenu_Clicked"
+                    Style="{StaticResource buttonStyle}"
+                    Grid.Row="7" Grid.Column="0"/>
 
         </Grid>
     </ContentPage.Content>
