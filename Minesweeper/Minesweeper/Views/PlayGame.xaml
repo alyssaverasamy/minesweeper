@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- author: alyssa -->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Minesweeper.PlayGame"
-             NavigationPage.HasNavigationBar="False"
-             Style="{StaticResource pageStyle}">
+             NavigationPage.HasNavigationBar="False">
 
     <StackLayout Orientation="Vertical">
         <StackLayout Orientation="Horizontal">
@@ -23,10 +23,12 @@
                 <Label x:Name="timer"
                        Text="xx:xx"
                        Style="{StaticResource counter}"/>
+                <Switch x:Name="ToggleFlag"
+                        IsToggled="False"/>
             </StackLayout>
         </StackLayout>
 
-        <Grid x:Name="mineGrid" ColumnSpacing="1" RowSpacing="1">
+        <Grid x:Name="mineGridLayout" ColumnSpacing="1" RowSpacing="1">
 
         </Grid>
 

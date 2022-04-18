@@ -17,7 +17,8 @@ namespace Minesweeper.Controls
 
         public bool isMine;
 
-        public bool isFlagged; 
+        public bool isFlagged;
+
 
         public MineButton(int row, int column, int cellCondition)
         {

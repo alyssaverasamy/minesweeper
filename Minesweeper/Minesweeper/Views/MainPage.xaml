@@ -1,28 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- author: alyssa -->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Minesweeper.MainPage"
-             NavigationPage.HasNavigationBar="False"
-             Style="{StaticResource pageStyle}">
+             NavigationPage.HasNavigationBar="False">
 
     <StackLayout Style="{StaticResource centeredStackLayout}">
         <Label Text="minesweeper"
-               Style="{StaticResource title}"
-               FontFamily="BalooThambi"
-               FontSize="50"
-               TextColor="#9FA8DA"></Label>
+               Style="{StaticResource maintitle}"/>
+
         <Button x:Name="startButton"
                 Text="start game"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"
-                HorizontalOptions="Center"
-                Clicked="StartButton_OnClicked"></Button>
+                Clicked="StartButton_OnClicked"/>
+
         <Button x:Name="rulesButton"
                 Text="rules"
                 Style="{StaticResource buttonStyle}"
-                WidthRequest="150"
-                HorizontalOptions="Center"
-                Clicked="RulesButton_OnClicked"></Button>
+                Clicked="RulesButton_OnClicked"/>
     </StackLayout>
 
 </ContentPage>

@@ -3,16 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Minesweeper.Views.PlayerScores">
     <ContentPage.Content>
-        <Grid ColumnDefinitions="*,*">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
+        <Grid ColumnDefinitions="*,*"
+              RowDefinitions="*,*,*,*,*,*,*">
+
             <ListView x:Name="LstofPlayers" Grid.Row="1" Grid.Column="1" Grid.RowSpan="5" HorizontalOptions="Center">
                 <ListView.ItemTemplate>
                     <DataTemplate>
