@@ -11,8 +11,8 @@ namespace Minesweeper
         {
             InitializeComponent();
 
-            //MainPage = new NavigationPage(new MainPage());
-            MainPage = new GameStart();  // temporary 
+            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new GameStart();  // temporary
         }
 
         protected override void OnStart ()
