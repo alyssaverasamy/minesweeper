@@ -13,20 +13,27 @@
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Label Text="ID:" TextColor="DarkGray" FontSize="Medium"/>
-                                    <Label Text="{Binding PlayerID}" TextColor="Blue" FontSize="Medium"/>
-                                    <Label Text="Name:" TextColor="DarkGray" FontSize="Medium"/>
-                                    <Label Text="{Binding PlayerName}" TextColor="SeaGreen" FontSize="Medium"/>
-                                    <Label Text="Score:" TextColor="DarkGray" FontSize="Medium"/>
-                                    <Label Text="{Binding PlayerWins, Mode=TwoWay}" TextColor="OrangeRed" FontSize="Medium"/>
+                                    <Label Text="ID:"
+                                           Style="{StaticResource text}"/>
+                                    <Label Text="{Binding PlayerID}"
+                                           Style="{StaticResource text}"/>
+                                    <Label Text="Name:"
+                                           Style="{StaticResource text}"/>
+                                    <Label Text="{Binding PlayerName}"
+                                           Style="{StaticResource text}"/>
+                                    <Label Text="Score:"
+                                           Style="{StaticResource text}"/>
+                                    <Label Text="{Binding PlayerWins, Mode=TwoWay}"
+                                           Style="{StaticResource text}"/>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Label Text="All Players" TextColor="SteelBlue" HorizontalOptions="Center" VerticalOptions="Center"
-                   Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" FontSize="Large"/>
+            <Label Text="All Players" 
+                   Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0"
+                   Style="{StaticResource text}"/>
             <Grid Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" VerticalOptions="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
@@ -37,21 +44,24 @@
                 <Entry x:Name="EntID" HorizontalOptions="Center"
                        VerticalOptions="Start"
                        Grid.Row="0"
-                       Placeholder="Enter New ID"
-                       PlaceholderColor="Blue"/>
+                       FontFamily="Fredoka"
+                       Placeholder="Enter New ID"/>
 
                 <Entry x:Name="EntName" HorizontalOptions="Center"
                        VerticalOptions="Start"
                        Grid.Row="1"
-                       Placeholder="Enter New Player Name"
-                       PlaceholderColor="SeaGreen"/>
+                       FontFamily="Fredoka"
+                       Placeholder="Enter New Player Name"/>
             </Grid>
 
-            <Button Text="Add New Player" BackgroundColor="LightGray" Clicked="AddPLayer_Clicked"
+            <Button Text="Add New Player" Clicked="AddPLayer_Clicked"
+                    Style="{StaticResource buttonStyle}"
                     Grid.Row="4" Grid.Column="0"/>
-            <Button Text="Update Player Score" BackgroundColor="LightGray" Clicked="UpdatePlayer_Clicked"
+            <Button Text="Update Player Score" Clicked="UpdatePlayer_Clicked"
+                    Style="{StaticResource buttonStyle}"
                     Grid.Row="5" Grid.Column="0"/>
-            <Button Text="Save Players " BackgroundColor="LightSteelBlue" Clicked="SaveAll"
+            <Button Text="Save Players " Clicked="SaveAll"
+                    Style="{StaticResource buttonStyle}"
                     Grid.Row="6" Grid.Column="0"/>
 
         </Grid>
